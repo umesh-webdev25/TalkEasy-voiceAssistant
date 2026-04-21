@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Create account - TalkEasy</title>
+  <link rel="stylesheet" href="/static/style.css?v=20251025161903">
+  <link rel="stylesheet" href="/static/auth.css?v=20251025161903">
+  </head>
+
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card card">
+      <div class="auth-split">
+        <div class="auth-hero">
+          <div class="auth-hero-inner">
+            <!-- Animated gradient orb background -->
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            
+            <!-- Brand Section -->
+            <div class="hero-brand">
+              <div class="brand-icon">
+                <svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20S35.046 4 24 4zm0 36c-8.822 0-16-7.178-16-16S15.178 8 24 8s16 7.178 16 16-7.178 16-16 16z" fill="url(#gradient1)"/>
+                  <path d="M24 14c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z" fill="url(#gradient2)"/>
+                  <circle cx="24" cy="24" r="4" fill="url(#gradient3)">
+                    <animate attributeName="r" values="4;5;4" dur="2s" repeatCount="indefinite"/>
+                  </circle>
+                  <defs>
+                    <linearGradient id="gradient1" x1="4" y1="4" x2="44" y2="44">
+                      <stop offset="0%" style="stop-color:#7c3aed"/>
+                      <stop offset="100%" style="stop-color:#6d28d9"/>
+                    </linearGradient>
+                    <linearGradient id="gradient2" x1="14" y1="14" x2="34" y2="34">
+                      <stop offset="0%" style="stop-color:#a78bfa"/>
+                      <stop offset="100%" style="stop-color:#7c3aed"/>
+                    </linearGradient>
+                    <linearGradient id="gradient3" x1="20" y1="20" x2="28" y2="28">
+                      <stop offset="0%" style="stop-color:#c4b5fd"/>
+                      <stop offset="100%" style="stop-color:#a78bfa"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <h1 class="hero-title">TalkEasy</h1>
+              <p class="hero-tagline">Join the Voice Revolution</p>
+            </div>
+            
+            <!-- Voice Assistant Illustration -->
+            <div class="hero-illustration" aria-hidden="true">
+              <div class="illustration-container">
+                <!-- Voice wave animation circles -->
+                <div class="voice-wave wave-1"></div>
+                <div class="voice-wave wave-2"></div>
+                <div class="voice-wave wave-3"></div>
+                
+                <!-- Main voice assistant image -->
+                <div class="assistant-image-wrapper">
+                  <img src="https://i.pinimg.com/originals/a4/27/43/a42743a152238221836e39576d889283.gif" 
+                       alt="Voice Assistant Registration" 
+                       class="assistant-image" />
+                </div>
+              </div>
+            </div>
+            
+            <!-- Feature highlights -->
+            <div class="hero-features">
+              <div class="feature-item">
+                <span class="feature-icon">🚀</span>
+                <span class="feature-text">Get Started Free</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">🔒</span>
+                <span class="feature-text">Secure & Private</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">✨</span>
+                <span class="feature-text">AI-Powered</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="auth-form">
+          
+          <div class="auth-header">
+            <div class="auth-logo">TE</div>
+            <div>
+              <h2 style="margin:0">Create an account</h2>
+              <div class="small-muted">Already have an account? <a href="/auth/login" style="color:inherit;opacity:0.9">Log in</a></div>
+            </div>
+          </div>
+
+          <form id="registerForm" novalidate>
+        <div class="field-grid">
+          <div class="form-group">
+            <label for="first_name">First name</label>
+            <input id="first_name" name="first_name" class="form-input" placeholder="First name" />
+          </div>
+          <div class="form-group">
+            <label for="last_name">Last name</label>
+            <input id="last_name" name="last_name" class="form-input" placeholder="Last name" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Work email</label>
+          <input id="email" name="email" type="email" class="form-input" placeholder="you@company.com" required autocomplete="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Create password</label>
+          <div style="display:flex;align-items:center;gap:8px">
+            <input id="password" name="password" type="password" class="form-input" placeholder="Minimum 8 characters" required autocomplete="new-password" />
+            <span id="togglePassReg" class="show-pass">Show</span>
+          </div>
+          <div class="small-muted">Use at least 8 characters. Avoid common words.</div>
+        </div>
+
+        <div style="display:flex;gap:12px;justify-content:center;margin-top:12px">
+          <button id="submitBtn" type="submit" class="btn primary full">Create account</button>
+        </div>
+
+        <div style="margin-top:18px">
+          <div class="divider">Or register with</div>
+          <div class="social-row">
+            <a class="social-btn" href="/auth/login/google"><img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" style="width:18px;height:18px" alt="Google"/> Google</a>
+            <a class="social-btn" href="/auth/login/apple"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" style="width:18px;height:18px;filter:invert(1)" alt="Apple"/> Apple</a>
+          </div>
+        </div>
+
+        <div id="status" class="status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/auth.js?v={{ timestamp }}"></script>
+  <script>
+    (function(){
+      try{
+        const links = document.querySelectorAll('link[rel="stylesheet"]');
+        const now = Date.now();
+        links.forEach(l=>{
+          const href = l.getAttribute('href')||'';
+          if(href.includes('/static/') && !href.includes('?v=')){
+            l.setAttribute('href', href + (href.includes('?') ? '&' : '?') + 'v=' + now);
+          }
+        });
+      }catch(e){}
+    })();
+  </script>
+</body>
+
+</html>

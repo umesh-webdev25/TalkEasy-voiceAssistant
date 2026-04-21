@@ -1,0 +1,11 @@
+venv
+/venv
+.venv
+.env
+.env.example
+voice_agent.log
+.vercel
+venv/
+.venv/
+__pycache__/
+*.pyc
